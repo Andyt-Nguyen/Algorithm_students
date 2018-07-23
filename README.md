@@ -211,5 +211,5 @@ Output in the terminal. A lot of test will be skipped in order to test the alg p
 
 ## Authors
 
-* **Andrew Ty Nguyen**(https://github.com/Andyt-Nguyen)
+* **[Andrew Ty Nguyen](https://github.com/Andyt-Nguyen)**
 
