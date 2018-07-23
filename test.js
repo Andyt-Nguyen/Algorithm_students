@@ -3,6 +3,7 @@ const algo = require("./problem_set_1/algorithm")
 
 describe("Testing Algorhthms", () => {
 
+    // sameDeepMembers()
     describe("Return evens and odd numbers in descending order where the evens appear first in the array", () => {
         it("Should return [8,6,0,7,5,1]", done => {
             const result = algo.sortEvenAndOdd([1,7,5,8,0,6])
@@ -23,6 +24,7 @@ describe("Testing Algorhthms", () => {
         })
     })
 
+    // capitalizeFLetter()
     describe("Captalize the first letter in every word as well as lowercase every word", () => {
         
         it("Should Return 'I Like Turtles'", done => {
@@ -50,6 +52,7 @@ describe("Testing Algorhthms", () => {
         })
     })
 
+    // removeDups()
     describe("Return an array with no duplications in descending order", done => {
 
         it("Should return [33,22,11]", done => {
@@ -77,6 +80,7 @@ describe("Testing Algorhthms", () => {
         })
     })
 
+    // repeatMe()
     describe('Return an a string that repeats itself on every single character', () => {
 
         it("Should return aabbcc", done => {
@@ -98,6 +102,7 @@ describe("Testing Algorhthms", () => {
         })
     })
 
+    // removeChar()
     describe("Return string without the character", () => {
         
         it("Should return heo", done => {
@@ -143,6 +148,7 @@ describe("Testing Algorhthms", () => {
         })
     })
 
+    // breakTheCamelsBack()
     describe('Return a string that puts a space before a capital letter', () => {
 
         it("Should return hello World", done => {
@@ -182,6 +188,7 @@ describe("Testing Algorhthms", () => {
         })
     })
 
+    // findUnique()
     describe('Return the unique number', () => {
 
         it("Should return 4", done => {
@@ -227,6 +234,7 @@ describe("Testing Algorhthms", () => {
         })
     })
 
+    // spaceNumbers()
     describe("Return the people who are still on the ship", () => {
 
         it("People on the ship === 4", done => {
