@@ -77,5 +77,26 @@ describe("Testing Algorhthms", () => {
         })
     })
 
+    describe('Return an a string that repeats itself on every single character', () => {
+
+        it("Should return aabbcc", done => {
+            const result = algo.repeatMe('abc')
+            assert.equal(result, 'aabbcc')
+            done()
+        })
+
+        it("Should return hhEElloo--  ''  ffrriieendds  ooff  tthhee  nnoorrtthh", done => {
+            const result = algo.repeatMe("hEllo- ' friends of the north")
+            assert.equal(result, "hhEElllloo--  ''  ffrriieennddss  ooff  tthhee  nnoorrtthh")
+            done()
+        })
+
+        it("Should return '  '", done => {
+            const result = algo.repeatMe(" ")
+            assert.equal(result, "  ")
+            done()
+        })
+    })
+
 
 })
