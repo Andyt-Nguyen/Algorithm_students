@@ -16,7 +16,7 @@ Basic understanding of npm and javascript
 
 You want to first git clone this repo
 
-```
+```javascript
 git clone https://github.com/Andyt-Nguyen/Algorithm_students.git
 ```
 
@@ -32,7 +32,7 @@ There will be empty functions that will have an empty return statement along wit
 
 basic prompt on the function's purpose.
 
-```
+```javascript
 /* 
 
     Problem 1:
@@ -58,7 +58,7 @@ basic prompt on the function's purpose.
 
 You will want to execute your code in the function that says '// Write code in here'
 
-```
+```javascript
  function sortEvenAndOdd(array) {
     //  Write code in here
     return;
@@ -97,7 +97,7 @@ Example: A function that has passed all the test cases
 ```
 
 Example: A test that has failed one of the test cases
-```
+```javascript
   7) Testing Algorhthms
        Return an array with no duplications in descending order
          Should return ['cc','bb','aa']:
