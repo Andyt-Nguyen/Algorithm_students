@@ -1,6 +1,7 @@
-# Project Title
+# Algorithm for students
 
-One Paragraph of project description goes here
+The series of algorithms will test students on ways to help with their javascript abilities
+as well test their knowlege and critical thinking on tackling a problem when solving problems.
 
 ## Getting Started
 
