@@ -98,7 +98,7 @@ describe("Testing Algorhthms", () => {
         })
     })
 
-    describe("Return string without the character", () => {
+    xdescribe("Return string without the character", () => {
         
         it("Should return heo", done => {
             const result = algo.removeChar("hello", "ll")
@@ -139,6 +139,45 @@ describe("Testing Algorhthms", () => {
         it("Should return JamesFranko", done => {
             const result = algo.removeChar("JamedesFranko", 'de')
             assert.equal(result, "JamesFranko")
+            done()
+        })
+    })
+
+    describe('Return a string that puts a space before a capital letter', () => {
+
+        it("Should return hello World", done => {
+            const result = algo.breakTheCamelsBack('helloWorld')
+            assert.equal(result, 'hello World')
+            done()
+        })
+
+        it("Should return pokie Man", done => {
+            const result = algo.breakTheCamelsBack("pokieMan")
+            assert.equal(result, "pokie Man")
+            done()
+        })
+
+        it("Should return i Am Who I Say I Am", done => {
+            const result = algo.breakTheCamelsBack("iAmWhoISayIAm")
+            assert.equal(result, "i Am Who I Say I Am")
+            done()
+        })
+
+        it("Should return this Is Camel Case People", done => {
+            const result = algo.breakTheCamelsBack('thisIsCamelCasePeople')
+            assert.equal(result, 'this Is Camel Case People')
+            done()
+        })
+
+        it('Should return i Like To Go To The Pizza Hut Down The Street Cause...!', done => {
+            const result = algo.breakTheCamelsBack("iLikeToGoToThePizzaHutDownTheStreetCause...!")
+            assert.equal(result, "i Like To Go To The Pizza Hut Down The Street Cause...!")
+            done()
+        })
+
+        it("Should return 1155 Jj Abrams Food", done => {
+            const result = algo.breakTheCamelsBack("1155JjAbramsFood")
+            assert(result, "1155 Jj Abrams Food")
             done()
         })
     })
