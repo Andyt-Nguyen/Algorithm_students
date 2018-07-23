@@ -26,7 +26,7 @@ then you want to install all the dependicies in this repo
 npm i
 ```
 
-### Algorithm set up
+### Writing your algorithms
 
 There will be empty functions that will have an empty return statement along with a 
 
