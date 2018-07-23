@@ -146,16 +146,7 @@ function removeChar(string,target) {
 
 
 function breakTheCamelsBack(string) {
-    let newString = ''
-    string = string.split('')
-    for(let i = 0; i < string.length; i++) {
-        if (string[i] === string[i].toLowerCase()) {
-            newString += string[i]
-        } else {
-            newString += ` ${string[i]}`
-        }
-    }
-    return newString
+    return ;
 }
 
 
@@ -181,6 +172,40 @@ function findUnique(numbers){
     return ;
  }
 
+  /* 
+
+    Problem 8
+    Prompt: Create a function called spaceNumbers()
+            In this function you will need to how many people are left in the spaceship after traveling to many 
+            planets. In here we are returning an array of arrays with 2 values inside each index
+
+            Example: [ [1,2], [2,3], [4,5] ]
+            
+            In the first index with the 2 values. The first value represents the people who have entered the ship
+            from the planet, and the second value represents the value of people leaving the ship off to new life
+            on another planet. Your goal is to find the amount of people left in the ship looking to find their 
+            new life on another planet.
+
+    *** Bonus/Super Challenge ***
+     No for loops!
+
+    Test Cases:
+        (This only test some cases for you to get an idea. This does not reflect if your algo works for all test cases)
+        (run `npm run test` to check if your alg passes the tests.)
+
+        [ [1,2], [3,4], [77,1] ] return 74
+        [ [2,4], [20, 8], [13, 9], [5, 14], [6, 9] ] return 2
+        [ [10, 4], [4, 7], [7, 0], [8, 2], [0, 5] ] return 11
+        "0 939 5 101 3 89" return 1
+
+*/ 
+
+function spaceNumbers(numbers){
+    return ;
+ }
+
 
 // Don't you dare touch this
-module.exports = { sortEvenAndOdd, capitalizeFLetter, removeDups, repeatMe, removeChar, breakTheCamelsBack, findUnique }
+module.exports = { sortEvenAndOdd, capitalizeFLetter, 
+                  removeDups, repeatMe, removeChar, 
+                  breakTheCamelsBack, findUnique, spaceNumbers }

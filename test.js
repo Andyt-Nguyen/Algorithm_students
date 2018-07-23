@@ -182,7 +182,7 @@ describe("Testing Algorhthms", () => {
         })
     })
 
-    describe('Return the unique number', () => {
+    xdescribe('Return the unique number', () => {
 
         it("Should return 4", done => {
             const result = algo.findUnique("1 5 7 2")
@@ -223,6 +223,51 @@ describe("Testing Algorhthms", () => {
         it("Should return 5", (done) => {
             const result = algo.findUnique("123 321 145 733 986 761 879")
             assert.equal(result, 5)
+            done()
+        })
+    })
+
+    describe("Return the people who are still on the ship", () => {
+
+        it("People on the ship === 4", done => {
+            const result = algo.spaceNumbers([ [1,2], [3,4], [77,1] ])
+            assert.equal(result, 74)
+            done()
+        })
+
+        it("People on the ship === 30", done => {
+            const result = algo.spaceNumbers([ [2,4], [20, 8], [13, 9], [5, 14], [6, 9] ])
+            assert.equal(result, 2)
+            done()
+        })
+
+        it("People on the ship === 11", done => {
+            const result = algo.spaceNumbers([ [10, 4], [4, 7], [7, 0], [8, 2], [0, 5] ])
+            assert.equal(result, 11)
+            done()
+        })
+
+        it("People on the ship === 5", done => {
+            const result = algo.spaceNumbers([ [10,0],[3,5],[5,8] ])
+            assert.equal(result, 5)
+            done()
+        })
+
+        it("People on the ship === 17", done => {
+            const result = algo.spaceNumbers([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]])
+            assert.equal(result, 17)
+            done()
+        })
+
+        it("People on the ship === 21", done => {
+            const result = algo.spaceNumbers([[3,0],[9,1],[4,8],[12,2],[6,1],[7,8]])
+            assert.equal(result, 21)
+            done()
+        })
+
+        it("People on the ship === 10", done => {
+            const result = algo.spaceNumbers([[21,10],[50,22],[4,12],[2,16],[6,12],[1,2]])
+            assert.equal(result, 10)
             done()
         })
     })
