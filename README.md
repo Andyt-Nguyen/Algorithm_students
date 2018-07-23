@@ -5,25 +5,34 @@ using vanilla javascript.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes
-as well to helps students use critical skills in solving algorithms.
+These instructions will help you get your javascript enviroment set up for testing
+your algorithms.
 
 ### Prerequisites
 
-What things you need to install to make the program execute
-
-```
-npm install --save mocha chai
-```
+Basic understanding of npm and javascript
 
 ### Installing
 
-There will be empty functions that will an empty return statement along with a 
+You want to first git clone this repo
+
+```
+git clone https://github.com/Andyt-Nguyen/Algorithm_students.git
+```
+
+then you want to install all the dependicies in this repo
+
+```
+npm i
+```
+
+### Algorithm set up
+
+There will be empty functions that will have an empty return statement along with a 
 
 basic prompt on the function's purpose.
 
 ```
-
 /* 
 
     Problem 1:
@@ -45,24 +54,28 @@ basic prompt on the function's purpose.
     //  Write code in here
     return;
 } 
-
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+You will want to execute your code in the function that says '// Write code in here'
+
+```
+ function sortEvenAndOdd(array) {
+    //  Write code in here
+    return;
+} 
+```
 
 ## Running the tests
 
-When the code is written you will have to run a test to see if the the functions passes the test in the termial/bash
+When the code is written you will have to run a test to see if your function passes the test in the termial/command prompt.
 
-### Break down into end to end tests
-
-You will run this command to execute if you have pass the series of test
+You will run this command in your terminal/command prompt to execute if you have pass the series of tests
 
 ```
 npm run test
 ```
 
-### And coding style tests
+### Expected results
 
 These test will have a series of inputs that it will test to see if the user offically
 passes all the test and the function works as it is expected.
