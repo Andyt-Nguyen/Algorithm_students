@@ -1,7 +1,6 @@
 # Algorithm for students
 
-The series of algorithms will test students on ways to help with their javascript abilities
-as well test their knowlege and critical thinking on tackling a problem when solving problems.
+The series of algorithms will test students on ways to solve basic/intermediate algorithm problems.
 
 ## Getting Started
 
