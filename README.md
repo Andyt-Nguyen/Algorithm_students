@@ -82,7 +82,7 @@ These test will have a series of inputs that it will test to see if the user off
 passes all the test and the function works as it is expected.
 
 Example: A function that has passed all the test cases
-```
+```javascript
   Testing Algorhthms
     Captalize the first letter in every word as well as lowercase every word
       ✓ Should Return 'I Like Turtles'
