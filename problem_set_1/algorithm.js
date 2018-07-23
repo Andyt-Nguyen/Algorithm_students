@@ -99,5 +99,33 @@ function repeatMe(string) {
     return ;
 }
 
+
+
+/* 
+
+    Problem 5
+    Prompt: Create a function called removeChar() with two parameters. One being the string it will take in and the other being where to target string.
+            The goal of this function is to take in the string and remove the "target" that is inside of it.
+
+
+    *** Bonus/Super Challenge ***
+     No for loops!
+
+    Test Cases:
+        (This only test some cases for you to get an idea. This does not reflect if your algo works for all test cases)
+        (run `npm run test` to check if your alg passes the tests.)
+
+        removeChar('hello', 'll') return 'heo'
+        removeChar('aazzTTkkrr', 'TT') return 'aazzkkrr'
+        removeChar('iliketurtles', 'like') return iturtles
+
+*/ 
+
+
+function removeChar(string,target) {
+    return ;
+}
+
+
 // Don't you dare touch this
-module.exports = { sortEvenAndOdd, capitalizeFLetter, removeDups, repeatMe }
+module.exports = { sortEvenAndOdd, capitalizeFLetter, removeDups, repeatMe, removeChar }

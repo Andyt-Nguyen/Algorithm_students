@@ -77,7 +77,7 @@ describe("Testing Algorhthms", () => {
         })
     })
 
-    describe('Return an a string that repeats itself on every single character', () => {
+    xdescribe('Return an a string that repeats itself on every single character', () => {
 
         it("Should return aabbcc", done => {
             const result = algo.repeatMe('abc')
@@ -94,6 +94,51 @@ describe("Testing Algorhthms", () => {
         it("Should return '  '", done => {
             const result = algo.repeatMe(" ")
             assert.equal(result, "  ")
+            done()
+        })
+    })
+
+    describe("Return string without the character", () => {
+        
+        it("Should return heo", done => {
+            const result = algo.removeChar("hello", "ll")
+            assert.equal(result, 'heo')
+            done()
+        })
+
+        it("Should return aazzkkrr", done => {
+            const result = algo.removeChar("aazzTTkkrr", "TT")
+            assert.equal(result, "aazzkkrr")
+            done()
+        })
+
+        it("Should return iturtles", done => {
+            const result = algo.removeChar("iliketurtles", "like")
+            assert.equal(result, 'iturtles')
+            done()
+        })
+
+        it("Should return askforjeevsgoogle", done => {
+            const result = algo.removeChar('askforjeevsgoogle','jeevs')
+            assert.equal(result, 'askforgoogle')
+            done()
+        })
+
+        it("Should return yuiiss ", done => {
+            const result = algo.removeChar('yuiiaass', 'aa')
+            assert.equal(result, 'yuiiss')
+            done()
+        })
+
+        it("Should return aazziiqllkn", done => {
+            const result = algo.removeChar("aazijziiqllkn", 'ij')
+            assert.equal(result, "aazziiqllkn")
+            done()
+        })
+
+        it("Should return JamesFranko", done => {
+            const result = algo.removeChar("JamedesFranko", 'de')
+            assert.equal(result, "JamesFranko")
             done()
         })
     })
