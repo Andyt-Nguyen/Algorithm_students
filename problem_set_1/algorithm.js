@@ -146,16 +146,7 @@ function removeChar(string,target) {
 
 
 function breakTheCamelsBack(string) {
-    let newString = ''
-    string = string.split('')
-    for(let i = 0; i < string.length; i++) {
-        if (string[i] === string[i].toLowerCase()) {
-            newString += string[i]
-        } else {
-            newString += ` ${string[i]}`
-        }
-    }
-    return newString
+    return ;
 }
 
 
