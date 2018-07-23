@@ -159,5 +159,28 @@ function breakTheCamelsBack(string) {
 }
 
 
+/* 
+
+    Problem 7
+    Prompt: Create a function called findUnique() that will find the characters in the string that finds the index with the unique number in the batch.
+    *** Bonus/Super Challenge ***
+    No for loops!
+    
+    Test Cases:
+        (This only test some cases for you to get an idea. This does not reflect if your algo works for all test cases)
+        (run `npm run test` to check if your alg passes the tests.)
+
+        "1 5 7 2" return 4
+        "766 772 331 678 1001" return 3
+        "0 939 5 101 3 89" return 1
+
+*/ 
+
+
+function findUnique(numbers){
+    return ;
+ }
+
+
 // Don't you dare touch this
-module.exports = { sortEvenAndOdd, capitalizeFLetter, removeDups, repeatMe, removeChar, breakTheCamelsBack }
+module.exports = { sortEvenAndOdd, capitalizeFLetter, removeDups, repeatMe, removeChar, breakTheCamelsBack, findUnique }

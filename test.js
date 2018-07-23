@@ -143,7 +143,7 @@ describe("Testing Algorhthms", () => {
         })
     })
 
-    describe('Return a string that puts a space before a capital letter', () => {
+    xdescribe('Return a string that puts a space before a capital letter', () => {
 
         it("Should return hello World", done => {
             const result = algo.breakTheCamelsBack('helloWorld')
@@ -178,6 +178,51 @@ describe("Testing Algorhthms", () => {
         it("Should return 1155 Jj Abrams Food", done => {
             const result = algo.breakTheCamelsBack("1155JjAbramsFood")
             assert(result, "1155 Jj Abrams Food")
+            done()
+        })
+    })
+
+    describe('Return the unique number', () => {
+
+        it("Should return 4", done => {
+            const result = algo.findUnique("1 5 7 2")
+            assert.equal(result, 4)
+            done()
+        })
+
+        it("Should return 3", done => {
+            const result = algo.findUnique("766 772 331 678 1001")
+            assert.equal(result, 3)
+            done()
+        })
+
+        it("Should return 1", done => {
+            const result = algo.findUnique("0 939 5 101 3 89")
+            assert.equal(result, 1)
+            done()
+        })
+
+        it("Should return 3", (done) => {
+            const result = algo.findUnique("1 3 2 5 7 9")
+            assert.equal(result, 3)
+            done()
+        })
+
+        it("Should return 1", (done) => {
+            const result = algo.findUnique("2 25 115 55 3123 50909")
+            assert.equal(result, 1)
+            done()
+        })
+
+        it("Should return 9", (done) => {
+            const result = algo.findUnique("397 51 745 879 101 2003 401 313 872 239")
+            assert.equal(result, 9)
+            done()
+        })
+
+        it("Should return 5", (done) => {
+            const result = algo.findUnique("123 321 145 733 986 761 879")
+            assert.equal(result, 5)
             done()
         })
     })
