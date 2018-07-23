@@ -119,6 +119,90 @@ Example: A test that has failed one of the test cases
       at Context.it (test.js:46:20)
 ```
 
+## Isolating each function for testing
+For each algorithm that you're going to solve its going to be hard to read what test cases you got wrong when all of the functions are laid out in front of you. Because of this you're going to be seeing a lot of red in your terminal. So a way to make sure your function is isoloated (by itself ) you can git checkout each branch to test your function by itself.
+
+Steps to isoloate function within the terminal/command prompt
+
+```
+git checkout Problem2
+```
+
+In your ide when checking out to a branch
+```javascript
+/* 
+
+    Problem 1:
+    Prompt: Create a function called sortEvenAndOdd that will sort the array so that the even numbers(sorted by ascending order)
+            are followed by the odd numbers in ascending order.
+        
+    Test cases: 
+        (This only test some cases for you to get an idea. This does not reflect if your algo works for all test cases)
+        (run `npm run test` to check if your alg passes the tests.)
+
+        [ 366, 311, 142 ] return [ 142, 366, 311 ]
+        [ 351, 85, 85 ] return [ 85, 85, 351 ]
+        [ 145, 372, 83, 290 ] return [ 290, 372, 83, 145 ]
+
+*/
+
+
+// Without For Loop
+function sortEvenAndOdd(array) {
+    return ;
+} 
+
+
+
+/*  
+
+    Problem 2:
+    Prompt: Create a function called capitalizeFLetter that will return the provided string with the first letter of each word capitalized. 
+            Make sure the rest of the word is in lower case while the first character is cap
+    
+            Hint: .slice() .push()
+
+             *** Bonus/Super Challenge ***
+             Restriction: No For Loops Allowed!
+             Hint: Look into HigherOrderFunctions such as .map()
+
+    Test Cases:
+        (This only test some cases for you to get an idea. This does not reflect if your algo works for all test cases)
+        (run `npm run test` to check if your alg passes the tests.)
+
+        "i Like tUrTles" return "I Like Turtles"
+        "dAviD liKEs TO eaT coOKiEs WhEn nOBoDy iS watChIng" return David Likes To Eat Cookies When Nobody Is Watching
+        "YoU aRe ThE mAsTeR AT JaVaScRipt" return "You Are The Master At Javascript"
+        "iEaTFooDAllDay" return Ieatfoodallday
+
+*/
+
+
+// Without for loop
+function capitalizeFLetter(string) {
+    return ;
+}
+```
+
+Output in the terminal. A lot of test will be skipped in order to test the alg problem you are trying to solve.
+```javascript
+  Testing Algorhthms
+    Return evens and odd numbers in descending order where the evens appear first in the array
+      - Should return [8,6,0,7,5,1]
+      - Should return [2,16,88,11,63,809]
+      - Should return [2000,2012,5100,4323,7877,9093]
+    Captalize the first letter in every word as well as lowercase every word
+      1) Should Return 'I Like Turtles'
+      2) Should Return 'David Likes To Eat Cookies When Nobody Is Watching'
+      3) Should return You Are The Master At Javascript
+      4) Should retrun Ieatfoodallday
+    Return an array with no duplications in descending order
+      - Should return [33,22,11]
+      - Should return [ 44, 42, 12, 7, 5, 2 ]
+      - Should return  [ 3000, 528, 100, 92, 55, 49, 22, 4, 2, 1, 0 ]
+      - Should return ['cc','bb','aa']
+```
+
 ## Built With
 
 * [Mocha](https://mochajs.org/) -Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases 
