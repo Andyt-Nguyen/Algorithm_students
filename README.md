@@ -65,9 +65,10 @@ You will want to execute your code in the function that says '// Write code in h
 } 
 ```
 
-## Running the tests
+## Testing your functions
 
-When the code is written you will have to run a test to see if your function passes the test in the termial/command prompt.
+When your code is written you will have to run a command within your termial/command prompt to see if you
+have pass all the test cases.
 
 You will run this command in your terminal/command prompt to execute if you have pass the series of tests
 
@@ -80,7 +81,7 @@ npm run test
 These test will have a series of inputs that it will test to see if the user offically
 passes all the test and the function works as it is expected.
 
-Heres a test that passes all of the inputs
+Example: A function that has passed all the test cases
 ```
   Testing Algorhthms
     Captalize the first letter in every word as well as lowercase every word
@@ -95,13 +96,27 @@ Heres a test that passes all of the inputs
       ✓ Should return ['cc','bb','aa']
 ```
 
-Heres a test that failed one of the inputs
+Example: A test that has failed one of the test cases
 ```
-       Captalize the first letter in every word as well as lowercase every word
-         Should Return 'David Likes To Eat Cookies When Nobody Is Watching':
-     AssertionError: expected undefined to equal 'David Likes To Eat Cookies When Nobody Is Watching'
-      at Context.it (test.js:14:20)
+  7) Testing Algorhthms
+       Return an array with no duplications in descending order
+         Should return ['cc','bb','aa']:
 
+      AssertionError: expected [ 'aa', 'aa', 'bb', 'bb', 'cc', 'cc' ] to have the same members as [ 'cc', 'bb', 'aa' ]
+      + expected - actual
+
+       [
+      +  "cc"
+      +  "bb"
+         "aa"
+      -  "aa"
+      -  "bb"
+      -  "bb"
+      -  "cc"
+      -  "cc"
+       ]
+      
+      at Context.it (test.js:46:20)
 ```
 
 ## Built With
