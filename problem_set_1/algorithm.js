@@ -15,7 +15,6 @@
 */
 
 
-// Without For Loop
 function sortEvenAndOdd(array) {
     return ;
 } 
@@ -46,7 +45,6 @@ function sortEvenAndOdd(array) {
 */
 
 
-// Without for loop
 function capitalizeFLetter(string) {
     return ;
 }
@@ -71,7 +69,6 @@ function capitalizeFLetter(string) {
 */
 
 
-// Without For Loop
 function removeDups(array) {
     return ;
 }
