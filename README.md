@@ -123,7 +123,7 @@ Example: A test that has failed one of the test cases
 
 * [Mocha](https://mochajs.org/) -Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases 
 
-* [http://www.chaijs.com/](https://maven.apache.org/) - Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
+* [Chai](https://maven.apache.org/) - Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
 
 ## Authors
 

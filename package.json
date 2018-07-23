@@ -1,0 +1,23 @@
+{
+  "name": "algorithm_students",
+  "version": "1.0.0",
+  "description": "Practice problems for beginner/intermediate students",
+  "main": "algorithm.js",
+  "scripts": {
+    "test": "mocha || true --/testScript/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andyt-Nguyen/Algorithm_students.git"
+  },
+  "author": "Andrew Ty Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andyt-Nguyen/Algorithm_students/issues"
+  },
+  "homepage": "https://github.com/Andyt-Nguyen/Algorithm_students#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
