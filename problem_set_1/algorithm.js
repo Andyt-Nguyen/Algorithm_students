@@ -126,6 +126,38 @@ function removeChar(string,target) {
     return ;
 }
 
+/* 
+
+    Problem 6
+    Prompt: Create a function called breakTheCamelsBack() that will create a space between the words that have a camel case.
+    *** Bonus/Super Challenge ***
+        No for loops!
+    
+    Test Cases:
+        (This only test some cases for you to get an idea. This does not reflect if your algo works for all test cases)
+        (run `npm run test` to check if your alg passes the tests.)
+
+        "helloWold" return hello World
+        "pokieMan" return "pokie Man"
+        "iAmWhoISayIAm" return "i Am Who I Say I Am"
+
+*/ 
+
+
+
+function breakTheCamelsBack(string) {
+    let newString = ''
+    string = string.split('')
+    for(let i = 0; i < string.length; i++) {
+        if (string[i] === string[i].toLowerCase()) {
+            newString += string[i]
+        } else {
+            newString += ` ${string[i]}`
+        }
+    }
+    return newString
+}
+
 
 // Don't you dare touch this
-module.exports = { sortEvenAndOdd, capitalizeFLetter, removeDups, repeatMe, removeChar }
+module.exports = { sortEvenAndOdd, capitalizeFLetter, removeDups, repeatMe, removeChar, breakTheCamelsBack }
