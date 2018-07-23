@@ -76,5 +76,28 @@ function removeDups(array) {
     return ;
 }
 
+/* 
+
+    Problem 4
+    Prompt: Create a function called repeatMe() that will repeat all the characters in the string.
+    *** Bonus/Super Challenge ***
+        No for loops!
+    
+    Test Cases:
+        (This only test some cases for you to get an idea. This does not reflect if your algo works for all test cases)
+        (run `npm run test` to check if your alg passes the tests.)
+
+        "hello" return "hheelllloo"
+        "Pikachu" return "PPiikkaacchhuu"
+        "Hey yoy yoyy" return "HHeeyy  yyooyyyy"
+
+*/ 
+
+
+
+function repeatMe(string) {
+    return ;
+}
+
 // Don't you dare touch this
-module.exports = { sortEvenAndOdd, capitalizeFLetter, removeDups }
+module.exports = { sortEvenAndOdd, capitalizeFLetter, removeDups, repeatMe }
