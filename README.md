@@ -1,6 +1,7 @@
 # Algorithm for students
 
-The series of algorithms will test students on ways to solve basic/intermediate algorithm problems.
+A series of algorithms will test students on ways to solve basic/intermediate algorithm problems
+using vanilla javascript.
 
 ## Getting Started
 
@@ -17,11 +18,9 @@ npm install --save mocha chai
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
 There will be empty functions that will an empty return statement along with a 
 
-basic prompt on what the functions purpose.
+basic prompt on the function's purpose.
 
 ```
 
