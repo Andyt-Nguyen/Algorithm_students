@@ -17,11 +17,7 @@
 
 // Without For Loop
 function sortEvenAndOdd(array) {
-    array = array.sort((a,b) => a - b)
-    const odds = array.filter( a => a % 2 !== 0)
-    const evens = array.filter( a => a % 2 == 0)
-    const combine = evens.concat(odds)
-    return combine
+    return ;
 } 
 
 
@@ -52,12 +48,7 @@ function sortEvenAndOdd(array) {
 
 // Without for loop
 function capitalizeFLetter(string) {
-    const splitString = string.split(' ')
-    const capLetter = splitString.map( a => {
-        let restOfLetters = a.slice(1)
-        return a[0].toUpperCase() + restOfLetters.toLowerCase()
-    })
-    return capLetter.join(' ')
+    return ;
 }
 
 
