@@ -148,7 +148,7 @@ When checking into a new branch run inside your terminal/command prompt to downl
 npm i
 ```
 
-Output in the terminal in isoloated enviroment. A lot of the tests will be skipped in order to test the alg problem you are trying to solve.
+Output in the terminal in isolated enviroment. A lot of the tests will be skipped in order to test the alg problem you are trying to solve.
 ```javascript
   Testing Algorhthms
     Return evens and odd numbers in descending order where the evens appear first in the array
