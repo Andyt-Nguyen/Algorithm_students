@@ -159,7 +159,7 @@ function breakTheCamelsBack(string) {
         (run `npm run test` to check if your alg passes the tests.)
 
         "1 5 7 2" return 4
-        "766 772 331 678 1001" return 3
+        "766 772 331 678 1002" return 3
         "0 939 5 101 3 89" return 1
 
 */ 
