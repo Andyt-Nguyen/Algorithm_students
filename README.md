@@ -124,8 +124,31 @@ For each algorithm that you're going to solve its going to be hard to read what 
 
 Steps to isoloate function within the terminal/command prompt
 
+To see all of the available branches
 ```
-git checkout Problem2
+git branch -a
+```
+Output:
+```
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/Problem2
+  remotes/origin/Problem3
+  remotes/origin/Problem4
+  remotes/origin/Problem5
+  ...
+```
+
+Checking into a branch
+```
+git checkout origin/Problem2
+```
+
+If you make a change to the remote branch
+```
+git add .
+git commit -m "message"
+git push origin Problem[whatever number probelm your on]
+git checkout master
 ```
 
 In your ide when checking out to a branch
