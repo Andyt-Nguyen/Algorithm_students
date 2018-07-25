@@ -4,7 +4,7 @@ const algo = require("./problem_set_1/algorithm")
 describe("Testing Algorhthms", () => {
 
     // sortEvenAndOdd()
-    describe("Return evens and odd numbers in descending order where the evens appear first in the array", () => {
+    xdescribe("Return evens and odd numbers in descending order where the evens appear first in the array", () => {
         it("Should return [8,6,0,7,5,1]", done => {
             const result = algo.sortEvenAndOdd([1,7,5,8,0,6])
             assert.sameDeepMembers(result,[8,6,0,7,5,1])
