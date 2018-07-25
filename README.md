@@ -78,7 +78,7 @@ npm run test
 
 ### Expected results
 
-These test will have a series of inputs that it will test to see if the user offically
+These test will have a series of inputs that it will test to see if you offically
 passes all the test and the function works as it is expected.
 
 Example: A function that has passed all the test cases
@@ -142,15 +142,6 @@ Checking into a branch
 ```
 git checkout origin/Problem2
 ```
-
-If you make a change to the remote branch
-```
-git add .
-git commit -m "message"
-git push origin Problem[whatever number your problem you're on]
-git checkout master
-```
-
 In your ide when checking out to a branch
 ```javascript
 /* 
@@ -225,6 +216,17 @@ Output in the terminal. A lot of test will be skipped in order to test the alg p
       - Should return  [ 3000, 528, 100, 92, 55, 49, 22, 4, 2, 1, 0 ]
       - Should return ['cc','bb','aa']
 ```
+
+Getting out of the remote branch. 
+```
+git add .
+git commit -m "message"
+git push origin Problem[whatever number your problem you're on]
+git checkout master
+```
+
+### Note: Once you isolate your function to test if it works your progress will not be saved in the master branch
+
 
 ## Built With
 
