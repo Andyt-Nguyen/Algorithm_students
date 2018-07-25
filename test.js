@@ -4,7 +4,7 @@ const algo = require("./problem_set_1/algorithm")
 describe("Testing Algorhthms", () => {
 
     // sameDeepMembers()
-    describe("Return evens and odd numbers in descending order where the evens appear first in the array", () => {
+    xdescribe("Return evens and odd numbers in descending order where the evens appear first in the array", () => {
         it("Should return [8,6,0,7,5,1]", done => {
             const result = algo.sortEvenAndOdd([1,7,5,8,0,6])
             assert.sameDeepMembers(result,[8,6,0,7,5,1])
@@ -25,7 +25,7 @@ describe("Testing Algorhthms", () => {
     })
 
     // capitalizeFLetter()
-    describe("Captalize the first letter in every word as well as lowercase every word", () => {
+    xdescribe("Captalize the first letter in every word as well as lowercase every word", () => {
         
         it("Should Return 'I Like Turtles'", done => {
             const result = algo.capitalizeFLetter("i Like tUrTles")
@@ -53,7 +53,7 @@ describe("Testing Algorhthms", () => {
     })
 
     // removeDups()
-    describe("Return an array with no duplications in descending order", done => {
+    xdescribe("Return an array with no duplications in descending order", done => {
 
         it("Should return [33,22,11]", done => {
             const result = algo.removeDups([33,22,11])
@@ -81,7 +81,7 @@ describe("Testing Algorhthms", () => {
     })
 
     // repeatMe()
-    describe('Return an a string that repeats itself on every single character', () => {
+    xdescribe('Return an a string that repeats itself on every single character', () => {
 
         it("Should return aabbcc", done => {
             const result = algo.repeatMe('abc')
@@ -103,7 +103,7 @@ describe("Testing Algorhthms", () => {
     })
 
     // removeChar()
-    describe("Return string without the character", () => {
+    xdescribe("Return string without the character", () => {
         
         it("Should return heo", done => {
             const result = algo.removeChar("hello", "ll")
@@ -149,7 +149,7 @@ describe("Testing Algorhthms", () => {
     })
 
     // breakTheCamelsBack()
-    describe('Return a string that puts a space before a capital letter', () => {
+    xdescribe('Return a string that puts a space before a capital letter', () => {
 
         it("Should return hello World", done => {
             const result = algo.breakTheCamelsBack('helloWorld')
@@ -189,7 +189,7 @@ describe("Testing Algorhthms", () => {
     })
 
     // findUnique()
-    describe('Return the unique number', () => {
+    xdescribe('Return the unique number', () => {
 
         it("Should return 4", done => {
             const result = algo.findUnique("1 5 7 2")
@@ -235,7 +235,7 @@ describe("Testing Algorhthms", () => {
     })
 
     // spaceNumbers()
-    describe("Return the people who are still on the ship", () => {
+    xdescribe("Return the people who are still on the ship", () => {
 
         it("People on the ship === 4", done => {
             const result = algo.spaceNumbers([ [1,2], [3,4], [77,1] ])
@@ -278,6 +278,54 @@ describe("Testing Algorhthms", () => {
             assert.equal(result, 10)
             done()
         })
+    })
+
+    // findTheLcd()
+    describe("Finding the common denominator", () => {
+
+        it(`Should return "(6,10)(10,10)"`, done => {
+            const result = algo.findTheLcd([ [3,5], [2,2] ] )
+            assert.equal(result, "(6,10)(10,10)")
+            done()
+        })
+
+        it(`Should return  "(6,12)(9,12)(20,12)"`, done => {
+            const result = algo.findTheLcd([ [1,2], [3,4], [5,3] ] )
+            assert.equal(result,  "(6,12)(9,12)(20,12)")
+            done()
+        })
+
+        it(`Should return "(45,60)(48,60)(40,60)"`, done => {
+            const result = algo.findTheLcd([ [3, 4], [4, 5], [2, 3] ] )
+            assert.equal(result, "(45,60)(48,60)(40,60)")
+            done()
+        })
+
+        it(`Should return "(10,26)(52,26)"`, done => {
+            const result = algo.findTheLcd([ [5,13], [4,2] ])
+            assert.equal(result, "(10,26)(52,26)")
+            done()
+        })
+
+        it(`Should return "(1,8)(4,8)(8,8)"`, done => {
+            const result = algo.findTheLcd([ [1,8], [1,2] ,[4,4] ])
+            assert.equal(result, "(1,8)(4,8)(8,8)")
+            done()
+        })
+        
+
+        it(`Should return "(4,12)(15,12)(6,12)(9,12)"`, done => {
+            const result = algo.findTheLcd([ [2,6], [5,4], [1,2], [9,12] ])
+            assert.equal(result, "(4,12)(15,12)(6,12)(9,12)")
+            done()
+        })
+
+        it(`Should return "(4,12)(15,12)(6,12)(9,12)()"`, done => {
+            const result = algo.findTheLcd([ [2,6], [5,4], [1,2], [9,12] ])
+            assert.equal(result, "(4,12)(15,12)(6,12)(9,12)")
+            done()
+        })
+        
     })
 
 

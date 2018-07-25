@@ -201,8 +201,34 @@ function spaceNumbers(numbers){
     return ;
  }
 
+   /* 
+
+    Problem 9
+    Prompt: Create a function called findTheLcd()
+            In this function you will need to find the lowest common denominator (LCD) in the array of arrays.
+            From there once you find the LCD you will need to change the numerator respectively.
+
+    *** Bonus/Super Challenge ***
+     No for loops!
+
+    Test Cases:
+        (This only test some cases for you to get an idea. This does not reflect if your algo works for all test cases)
+        (run `npm run test` to check if your alg passes the tests.)
+
+        [ [3,5], [2,2] ] return "(6,10)(10,10)"
+        [ [1,2], [3,4], [5,3] ] return "(6,12)(9,12)(20,12)"
+        [ [3, 4], [4, 5], [2, 3] ] return "(45,60)(48,60)(40,60)"
+
+*/ 
+
+function findTheLcd(lst){
+    return ;
+ }
+
+
+
 
 // Don't you dare touch this
 module.exports = { sortEvenAndOdd, capitalizeFLetter, 
                   removeDups, repeatMe, removeChar, 
-                  breakTheCamelsBack, findUnique, spaceNumbers }
+                  breakTheCamelsBack, findUnique, spaceNumbers, findTheLcd }
