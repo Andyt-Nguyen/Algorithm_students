@@ -86,7 +86,7 @@ function removeDups(array) {
 
         "hello" return "hheelllloo"
         "Pikachu" return "PPiikkaacchhuu"
-        "Hey yoy yoyy" return "HHeeyy  yyooyyyy"
+        "Hey yoy yoyy" return "HHeeyy yyooyy yyooyyyy"
 
 */ 
 
