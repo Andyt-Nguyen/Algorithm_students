@@ -142,63 +142,14 @@ Checking into a branch
 ```
 git checkout origin/Problem2
 ```
-In your ide when checking out to a branch
-```javascript
-/* 
 
-    Problem 1:
-    Prompt: Create a function called sortEvenAndOdd that will sort the array so that the even numbers(sorted by ascending order)
-            are followed by the odd numbers in ascending order.
-        
-    Test cases: 
-        (This only test some cases for you to get an idea. This does not reflect if your algo works for all test cases)
-        (run `npm run test` to check if your alg passes the tests.)
-
-        [ 366, 311, 142 ] return [ 142, 366, 311 ]
-        [ 351, 85, 85 ] return [ 85, 85, 351 ]
-        [ 145, 372, 83, 290 ] return [ 290, 372, 83, 145 ]
-
-*/
-
-
-// Without For Loop
-function sortEvenAndOdd(array) {
-    return ;
-} 
-
-
-
-/*  
-
-    Problem 2:
-    Prompt: Create a function called capitalizeFLetter that will return the provided string with the first letter of each word capitalized. 
-            Make sure the rest of the word is in lower case while the first character is cap
-    
-            Hint: .slice() .push()
-
-             *** Bonus/Super Challenge ***
-             Restriction: No For Loops Allowed!
-             Hint: Look into HigherOrderFunctions such as .map()
-
-    Test Cases:
-        (This only test some cases for you to get an idea. This does not reflect if your algo works for all test cases)
-        (run `npm run test` to check if your alg passes the tests.)
-
-        "i Like tUrTles" return "I Like Turtles"
-        "dAviD liKEs TO eaT coOKiEs WhEn nOBoDy iS watChIng" return David Likes To Eat Cookies When Nobody Is Watching
-        "YoU aRe ThE mAsTeR AT JaVaScRipt" return "You Are The Master At Javascript"
-        "iEaTFooDAllDay" return Ieatfoodallday
-
-*/
-
-
-// Without for loop
-function capitalizeFLetter(string) {
-    return ;
-}
+When checking into a new branch run inside your terminal/command prompt to download the dependencies
+```
+npm i
 ```
 
-Output in the terminal. A lot of test will be skipped in order to test the alg problem you are trying to solve.
+
+Output in the terminal. A lot of the tests will be skipped in order to test the alg problem you are trying to solve.
 ```javascript
   Testing Algorhthms
     Return evens and odd numbers in descending order where the evens appear first in the array
@@ -215,6 +166,7 @@ Output in the terminal. A lot of test will be skipped in order to test the alg p
       - Should return [ 44, 42, 12, 7, 5, 2 ]
       - Should return  [ 3000, 528, 100, 92, 55, 49, 22, 4, 2, 1, 0 ]
       - Should return ['cc','bb','aa']
+    ...
 ```
 
 Getting out of the remote branch. 
