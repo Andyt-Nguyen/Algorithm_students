@@ -147,7 +147,7 @@ If you make a change to the remote branch
 ```
 git add .
 git commit -m "message"
-git push origin Problem[whatever number your problem your on]
+git push origin Problem[whatever number your problem you're on]
 git checkout master
 ```
 
