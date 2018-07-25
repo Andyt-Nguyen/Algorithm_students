@@ -225,7 +225,7 @@ git push origin Problem[whatever number your problem you're on]
 git checkout master
 ```
 
-### Note: Once you isolate your function to test if it works your progress will not be saved in the master branch
+### Note: Once you isolate your function to test if it works your progress will not be saved in the master branch so make sure to save your progress in the "master" branch.
 
 
 ## Built With
