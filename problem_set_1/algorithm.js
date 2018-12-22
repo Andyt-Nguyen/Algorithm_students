@@ -21,10 +21,8 @@ function sortEvenAndOdd(array) {
 
 
  /**
-  Problem 2:
    Prompt: Create a function called sortMeOneMoreTime
-           In this function you will need to sort all the numbers in each individual array by ascending order as well as
-           sort the arrays themselves in order.
+           In this function you will need to sort all the numbers in each array by assending order
    Test cases:
        (This only test some cases for you to get an idea. This does not reflect if your algo works for all test cases)
         (run `npm run test` to check if your alg passes the tests.)
@@ -41,7 +39,7 @@ function sortEvenAndOdd(array) {
 
 /*  
 
-    Problem 3:
+    Problem 2:
     Prompt: Create a function called capitalizeFLetter that will return the provided string with the first letter of each word capitalized. 
             Make sure the rest of the word is in lower case while the first character is cap
     
@@ -70,7 +68,7 @@ function capitalizeFLetter(string) {
 
 /* 
 
-    Problem 4
+    Problem 3
     Prompt: Create a function called removeDups() that will return an array with no duplications in descending order.
 
     *** Bonus/Super Challenge ***
@@ -93,7 +91,7 @@ function removeDups(array) {
 
 /* 
 
-    Problem 5
+    Problem 4
     Prompt: Create a function called repeatMe() that will repeat all the characters in the string.
     *** Bonus/Super Challenge ***
         No for loops!
@@ -118,7 +116,7 @@ function repeatMe(string) {
 
 /* 
 
-    Problem 6
+    Problem 5
     Prompt: Create a function called removeChar() with two parameters. One being the string it will take in and the other being where to target string.
             The goal of this function is to take in the string and remove the "target" that is inside of it.
 
@@ -143,7 +141,7 @@ function removeChar(string,target) {
 
 /* 
 
-    Problem 7
+    Problem 6
     Prompt: Create a function called breakTheCamelsBack() that will create a space between the words that have a camel case.
     *** Bonus/Super Challenge ***
         No for loops!
@@ -167,7 +165,7 @@ function breakTheCamelsBack(string) {
 
 /* 
 
-    Problem 8
+    Problem 7
     Prompt: Create a function called findUnique() that will find the characters in the string that finds the index with the unique number in the batch.
     *** Bonus/Super Challenge ***
     No for loops!
@@ -189,7 +187,7 @@ function findUnique(numbers){
 
   /* 
 
-    Problem 9
+    Problem 8
     Prompt: Create a function called spaceNumbers()
             In this function you will need to how many people are left in the spaceship after traveling to many 
             planets. In here we are returning an array of arrays with 2 values inside each index
@@ -221,7 +219,7 @@ function spaceNumbers(numbers){
 
    /* 
 
-    Problem 10
+    Problem 9
     Prompt: Create a function called findTheLcd()
             In this function you will need to find the lowest common denominator (LCD) in the array of arrays.
             From there once you find the LCD you will need to change the numerator respectively.
