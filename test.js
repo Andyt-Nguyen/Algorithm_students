@@ -244,8 +244,8 @@ describe("Testing Algorhthms", () => {
         })
 
         it('Should return i Like To Go To The Pizza Hut Down The Street Cause...!', done => {
-            const result = algo.breakTheCamelsBack("iLikeToGoToThePizzaHutDownTheStreetCause...!")
-            assert.equal(result, "i Like To Go To The Pizza Hut Down The Street Cause...!")
+            const result = algo.breakTheCamelsBack("iLikeToGoToThePizzaHutDownTheStreetCause")
+            assert.equal(result, "i Like To Go To The Pizza Hut Down The Street Cause")
             done()
         })
 

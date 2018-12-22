@@ -20,11 +20,11 @@ function sortEvenAndOdd(array) {
 } 
 
 
+
  /**
-  Problem 2:
+  Problem 10:
    Prompt: Create a function called sortMeOneMoreTime
-           In this function you will need to sort all the numbers in each individual array by ascending order as well as
-           sort the arrays themselves in order.
+           In this function you will need to sort all the numbers in each array by assending order
    Test cases:
        (This only test some cases for you to get an idea. This does not reflect if your algo works for all test cases)
         (run `npm run test` to check if your alg passes the tests.)
@@ -34,14 +34,15 @@ function sortEvenAndOdd(array) {
         [ [50], [37], [100] ] return [ [37], [50], [100] ]
   */
  function sortMeOneMoreTime(arr) {
-    return arr
-}
+     
+
+ }
 
 
 
 /*  
 
-    Problem 3:
+    Problem 2:
     Prompt: Create a function called capitalizeFLetter that will return the provided string with the first letter of each word capitalized. 
             Make sure the rest of the word is in lower case while the first character is cap
     
@@ -70,7 +71,7 @@ function capitalizeFLetter(string) {
 
 /* 
 
-    Problem 4
+    Problem 3
     Prompt: Create a function called removeDups() that will return an array with no duplications in descending order.
 
     *** Bonus/Super Challenge ***
@@ -93,7 +94,7 @@ function removeDups(array) {
 
 /* 
 
-    Problem 5
+    Problem 4
     Prompt: Create a function called repeatMe() that will repeat all the characters in the string.
     *** Bonus/Super Challenge ***
         No for loops!
@@ -118,7 +119,7 @@ function repeatMe(string) {
 
 /* 
 
-    Problem 6
+    Problem 5
     Prompt: Create a function called removeChar() with two parameters. One being the string it will take in and the other being where to target string.
             The goal of this function is to take in the string and remove the "target" that is inside of it.
 
@@ -143,7 +144,7 @@ function removeChar(string,target) {
 
 /* 
 
-    Problem 7
+    Problem 6
     Prompt: Create a function called breakTheCamelsBack() that will create a space between the words that have a camel case.
     *** Bonus/Super Challenge ***
         No for loops!
@@ -167,7 +168,7 @@ function breakTheCamelsBack(string) {
 
 /* 
 
-    Problem 8
+    Problem 7
     Prompt: Create a function called findUnique() that will find the characters in the string that finds the index with the unique number in the batch.
     *** Bonus/Super Challenge ***
     No for loops!
@@ -189,7 +190,7 @@ function findUnique(numbers){
 
   /* 
 
-    Problem 9
+    Problem 8
     Prompt: Create a function called spaceNumbers()
             In this function you will need to how many people are left in the spaceship after traveling to many 
             planets. In here we are returning an array of arrays with 2 values inside each index
@@ -221,7 +222,7 @@ function spaceNumbers(numbers){
 
    /* 
 
-    Problem 10
+    Problem 9
     Prompt: Create a function called findTheLcd()
             In this function you will need to find the lowest common denominator (LCD) in the array of arrays.
             From there once you find the LCD you will need to change the numerator respectively.
@@ -243,6 +244,77 @@ function findTheLcd(lst){
     return ;
  }
 
+
+ /**
+   Prompt: Create a function called sortMeOneMoreTime
+           In this function you will need to sort all the numbers in each array by assending order
+   Test cases:
+       (This only test some cases for you to get an idea. This does not reflect if your algo works for all test cases)
+        (run `npm run test` to check if your alg passes the tests.)
+        
+        [ [50,  5],  [37,19],   [100,64] ] return [ [5, 50], [19, 37], [64, 100] ]
+        [ [1, 34,  18], [99, 39, 3], [48,  1, 12] ] return [ [1, 12, 48], [1, 18, 34], [3, 39, 99] ]
+        [ [50], [37], [100] ] return [ [37], [50], [100] ]
+  */
+ function sortMeOneMoreTime(arr) {
+    let maxLen = arr[0].length
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i].length > maxLen) {
+            maxLen = arr[i].length
+        }
+    }
+    arr = arr.map( a => a.sort((a,b) => a - b))
+    // arr = arr.sort((a,b) => a[0] - b[0])
+    // arr = arr.sort((a,b) => a[1] - b[1])
+
+
+    for(let i = maxLen - 1; i > 0; i--) {
+        console.log(i)
+        arr = arr.sort((a,b) => a[i] - b[i])
+    }
+    // console.log(arr)
+
+    // while(!isSorted) {
+    //     if(arr[i])
+    // }
+
+    // for(let i = 0; i < arr.length - 1; i++) {
+    //     if(arr[i][0] === arr[i + 1][0]) {
+    //         if(arr[i + 1].length <= arr[i].length ) {
+    //             for(let j = 0; j < arr[i+1].length; j++) {
+    //                 if(arr[i + 1][j] < arr[i][j]) {
+    //                     const curr = arr[i];
+    //                     const next = arr[i + 1]
+    //                     arr[i] = next;
+    //                     arr[i + 1] = curr
+    //                     isSorted = false
+    //                 }
+    //             } 
+    //         } else {
+    //             if(arr[i].length < arr[i + 1].length) {
+    //                 for(let j = 0; j < arr[i].length; j++) {
+    //                     if(arr[i][j] > arr[i + 1][j]) {
+    //                         console.log("CURR",arr[i][j])
+    //                         console.log("NEXT",arr[i + 1][j])
+    //                         const curr = arr[i];
+    //                         const next = arr[i + 1]
+    //                         arr[i] = next;
+    //                         arr[i + 1] = curr
+    //                         isSorted = false
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+     
+     console.log(arr)
+     return arr
+ }
+
+
+ sortMeOneMoreTime([[75, 2], [12,3,2],[ 64,2,163,363], [23, 2, 78, 2], [2, 80, 27, 2, 5]])
 
  
 // Don't you dare touch this
