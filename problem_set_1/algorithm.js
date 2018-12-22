@@ -23,7 +23,8 @@ function sortEvenAndOdd(array) {
 
  /**
    Prompt: Create a function called sortMeOneMoreTime
-           In this function you will need to sort all the numbers in each array by assending order
+           In this function you will need to sort all the numbers in each array by assending order as well
+           as the arrays parents arrays themselves
    Test cases:
        (This only test some cases for you to get an idea. This does not reflect if your algo works for all test cases)
         (run `npm run test` to check if your alg passes the tests.)
