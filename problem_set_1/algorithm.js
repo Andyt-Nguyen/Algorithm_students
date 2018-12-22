@@ -20,10 +20,28 @@ function sortEvenAndOdd(array) {
 } 
 
 
+ /**
+  Problem 2:
+   Prompt: Create a function called sortMeOneMoreTime
+           In this function you will need to sort all the numbers in each individual array by ascending order as well as
+           sort the arrays themselves in order.
+   Test cases:
+       (This only test some cases for you to get an idea. This does not reflect if your algo works for all test cases)
+        (run `npm run test` to check if your alg passes the tests.)
+        
+        [ [50,  5],  [37,19],   [100,64] ] return [ [5, 50], [19, 37], [64, 100] ]
+        [ [1, 34,  18], [99, 39, 3], [48,  1, 12] ] return [ [1, 12, 48], [1, 18, 34], [3, 39, 99] ]
+        [ [50], [37], [100] ] return [ [37], [50], [100] ]
+  */
+ function sortMeOneMoreTime(arr) {
+    return arr
+}
+
+
 
 /*  
 
-    Problem 2:
+    Problem 3:
     Prompt: Create a function called capitalizeFLetter that will return the provided string with the first letter of each word capitalized. 
             Make sure the rest of the word is in lower case while the first character is cap
     
@@ -52,7 +70,7 @@ function capitalizeFLetter(string) {
 
 /* 
 
-    Problem 3
+    Problem 4
     Prompt: Create a function called removeDups() that will return an array with no duplications in descending order.
 
     *** Bonus/Super Challenge ***
@@ -75,7 +93,7 @@ function removeDups(array) {
 
 /* 
 
-    Problem 4
+    Problem 5
     Prompt: Create a function called repeatMe() that will repeat all the characters in the string.
     *** Bonus/Super Challenge ***
         No for loops!
@@ -86,7 +104,7 @@ function removeDups(array) {
 
         "hello" return "hheelllloo"
         "Pikachu" return "PPiikkaacchhuu"
-        "Hey yoy yoyy" return "HHeeyy yyooyy yyooyyyy"
+        "Hey yoy yoyy" return "HHeeyy  yyooyy  yyooyyyy"
 
 */ 
 
@@ -100,7 +118,7 @@ function repeatMe(string) {
 
 /* 
 
-    Problem 5
+    Problem 6
     Prompt: Create a function called removeChar() with two parameters. One being the string it will take in and the other being where to target string.
             The goal of this function is to take in the string and remove the "target" that is inside of it.
 
@@ -125,7 +143,7 @@ function removeChar(string,target) {
 
 /* 
 
-    Problem 6
+    Problem 7
     Prompt: Create a function called breakTheCamelsBack() that will create a space between the words that have a camel case.
     *** Bonus/Super Challenge ***
         No for loops!
@@ -149,7 +167,7 @@ function breakTheCamelsBack(string) {
 
 /* 
 
-    Problem 7
+    Problem 8
     Prompt: Create a function called findUnique() that will find the characters in the string that finds the index with the unique number in the batch.
     *** Bonus/Super Challenge ***
     No for loops!
@@ -171,7 +189,7 @@ function findUnique(numbers){
 
   /* 
 
-    Problem 8
+    Problem 9
     Prompt: Create a function called spaceNumbers()
             In this function you will need to how many people are left in the spaceship after traveling to many 
             planets. In here we are returning an array of arrays with 2 values inside each index
@@ -203,7 +221,7 @@ function spaceNumbers(numbers){
 
    /* 
 
-    Problem 9
+    Problem 10
     Prompt: Create a function called findTheLcd()
             In this function you will need to find the lowest common denominator (LCD) in the array of arrays.
             From there once you find the LCD you will need to change the numerator respectively.
@@ -226,9 +244,8 @@ function findTheLcd(lst){
  }
 
 
-
  
 // Don't you dare touch this
-module.exports = { sortEvenAndOdd, capitalizeFLetter, 
+module.exports = { sortEvenAndOdd, capitalizeFLetter, sortMeOneMoreTime,
                   removeDups, repeatMe, removeChar, 
                   breakTheCamelsBack, findUnique, spaceNumbers, findTheLcd }
