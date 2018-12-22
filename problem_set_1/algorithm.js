@@ -22,6 +22,7 @@ function sortEvenAndOdd(array) {
 
 
  /**
+   Problem 10:
    Prompt: Create a function called sortMeOneMoreTime
            In this function you will need to sort all the numbers in each array by assending order as well
            as the arrays parents arrays themselves

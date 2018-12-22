@@ -4,7 +4,7 @@ const algo = require("./problem_set_1/algorithm")
 describe("Testing Algorhthms", () => {
 
     // sortEvenAndOdd()
-    xdescribe("Return evens and odd numbers in descending order where the evens appear first in the array", () => {
+    describe("Return evens and odd numbers in descending order where the evens appear first in the array", () => {
         it("Should return [8,6,0,7,5,1]", done => {
             const result = algo.sortEvenAndOdd([1,7,5,8,0,6])
             assert.sameDeepMembers(result,[8,6,0,7,5,1])
@@ -93,7 +93,7 @@ describe("Testing Algorhthms", () => {
     })
 
     // capitalizeFLetter()
-    xdescribe("Captalize the first letter in every word as well as lowercase every word", () => {
+    describe("Captalize the first letter in every word as well as lowercase every word", () => {
         
         it("Should Return 'I Like Turtles'", done => {
             const result = algo.capitalizeFLetter("i Like tUrTles")
@@ -121,7 +121,7 @@ describe("Testing Algorhthms", () => {
     })
 
     // removeDups()
-    xdescribe("Return an array with no duplications in descending order", done => {
+    describe("Return an array with no duplications in descending order", done => {
 
         it("Should return [33,22,11]", done => {
             const result = algo.removeDups([33,22,11])
@@ -149,7 +149,7 @@ describe("Testing Algorhthms", () => {
     })
 
     // repeatMe()
-    xdescribe('Return a string that repeats itself on every single character', () => {
+    describe('Return a string that repeats itself on every single character', () => {
 
         it("Should return aabbcc", done => {
             const result = algo.repeatMe('abc')
@@ -171,7 +171,7 @@ describe("Testing Algorhthms", () => {
     })
 
     // removeChar()
-    xdescribe("Return string without the character", () => {
+    describe("Return string without the character", () => {
         
         it("Should return heo", done => {
             const result = algo.removeChar("hello", "ll")
@@ -217,7 +217,7 @@ describe("Testing Algorhthms", () => {
     })
 
     // breakTheCamelsBack()
-    xdescribe('Return a string that puts a space before a capital letter', () => {
+    describe('Return a string that puts a space before a capital letter', () => {
 
         it("Should return hello World", done => {
             const result = algo.breakTheCamelsBack('helloWorld')
@@ -257,7 +257,7 @@ describe("Testing Algorhthms", () => {
     })
 
     // findUnique()
-    xdescribe('Return the unique number', () => {
+    describe('Return the unique number', () => {
 
         it("Should return 4", done => {
             const result = algo.findUnique("1 5 7 2")
@@ -303,7 +303,7 @@ describe("Testing Algorhthms", () => {
     })
 
     // spaceNumbers()
-    xdescribe("Return the people who are still on the ship", () => {
+    describe("Return the people who are still on the ship", () => {
 
         it("People on the ship === 4", done => {
             const result = algo.spaceNumbers([ [1,2], [3,4], [77,1] ])
@@ -349,7 +349,7 @@ describe("Testing Algorhthms", () => {
     })
 
     // findTheLcd()
-    xdescribe("Finding the common denominator", () => {
+    describe("Finding the common denominator", () => {
 
         it(`Should return "(6,10)(10,10)"`, done => {
             const result = algo.findTheLcd([ [3,5], [2,2] ] )
