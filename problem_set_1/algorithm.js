@@ -22,7 +22,6 @@ function sortEvenAndOdd(array) {
 
 
  /**
-  Problem 10:
    Prompt: Create a function called sortMeOneMoreTime
            In this function you will need to sort all the numbers in each array by assending order
    Test cases:
@@ -34,7 +33,7 @@ function sortEvenAndOdd(array) {
         [ [50], [37], [100] ] return [ [37], [50], [100] ]
   */
  function sortMeOneMoreTime(arr) {
-     
+
 
  }
 
@@ -244,77 +243,6 @@ function findTheLcd(lst){
     return ;
  }
 
-
- /**
-   Prompt: Create a function called sortMeOneMoreTime
-           In this function you will need to sort all the numbers in each array by assending order
-   Test cases:
-       (This only test some cases for you to get an idea. This does not reflect if your algo works for all test cases)
-        (run `npm run test` to check if your alg passes the tests.)
-        
-        [ [50,  5],  [37,19],   [100,64] ] return [ [5, 50], [19, 37], [64, 100] ]
-        [ [1, 34,  18], [99, 39, 3], [48,  1, 12] ] return [ [1, 12, 48], [1, 18, 34], [3, 39, 99] ]
-        [ [50], [37], [100] ] return [ [37], [50], [100] ]
-  */
- function sortMeOneMoreTime(arr) {
-    let maxLen = arr[0].length
-    for(let i = 0; i < arr.length; i++) {
-        if(arr[i].length > maxLen) {
-            maxLen = arr[i].length
-        }
-    }
-    arr = arr.map( a => a.sort((a,b) => a - b))
-    // arr = arr.sort((a,b) => a[0] - b[0])
-    // arr = arr.sort((a,b) => a[1] - b[1])
-
-
-    for(let i = maxLen - 1; i > 0; i--) {
-        console.log(i)
-        arr = arr.sort((a,b) => a[i] - b[i])
-    }
-    // console.log(arr)
-
-    // while(!isSorted) {
-    //     if(arr[i])
-    // }
-
-    // for(let i = 0; i < arr.length - 1; i++) {
-    //     if(arr[i][0] === arr[i + 1][0]) {
-    //         if(arr[i + 1].length <= arr[i].length ) {
-    //             for(let j = 0; j < arr[i+1].length; j++) {
-    //                 if(arr[i + 1][j] < arr[i][j]) {
-    //                     const curr = arr[i];
-    //                     const next = arr[i + 1]
-    //                     arr[i] = next;
-    //                     arr[i + 1] = curr
-    //                     isSorted = false
-    //                 }
-    //             } 
-    //         } else {
-    //             if(arr[i].length < arr[i + 1].length) {
-    //                 for(let j = 0; j < arr[i].length; j++) {
-    //                     if(arr[i][j] > arr[i + 1][j]) {
-    //                         console.log("CURR",arr[i][j])
-    //                         console.log("NEXT",arr[i + 1][j])
-    //                         const curr = arr[i];
-    //                         const next = arr[i + 1]
-    //                         arr[i] = next;
-    //                         arr[i + 1] = curr
-    //                         isSorted = false
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-
-     
-     console.log(arr)
-     return arr
- }
-
-
- sortMeOneMoreTime([[75, 2], [12,3,2],[ 64,2,163,363], [23, 2, 78, 2], [2, 80, 27, 2, 5]])
 
  
 // Don't you dare touch this
