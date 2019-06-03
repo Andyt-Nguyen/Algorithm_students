@@ -24,74 +24,6 @@ describe("Testing Algorhthms", () => {
         })
     })
 
-    // sortMeOneMoreTime()
-    describe("Return sorted arrays by complete ascending order", () => {
-        it("Should return [[5, 50], [19, 37], [64, 100]]", done => {
-            const result = algo.sortMeOneMoreTime([[50,5],[37,19],[100,64]])
-            assert.sameDeepMembers(result, [[5, 50], [19, 37], [64, 100]])
-            done()
-        })
-
-        it("Should return [ [1, 12, 48], [1, 18, 34], [3, 39, 99] ]", done => {
-            const result = algo.sortMeOneMoreTime([[1,34,18],  [48,1,12], [99,39,3]])
-            assert.sameDeepMembers(result, [[1,12,48], [1,18,34],[3,39,99]])
-            done()
-        })
-
-        it("Should return  [ [37], [50], [100] ]", done => {
-            const result = algo.sortMeOneMoreTime([[50],[37],[100]])
-            assert.sameDeepMembers(result, [[37],[50],[100]])
-            done()
-        })
-
-        it("Should return [[ 2, 98, 552, 999, 2344, 8477 ],[ 12, 35, 55, 77, 98, 100 ],[ 34, 64, 552, 2000, 8477, 19837 ]]", done => {
-            const result = algo.sortMeOneMoreTime([[98, 2344, 2, 999, 8477, 552],[64, 34, 19837, 2000, 8477, 552],[12, 55, 98, 100, 77, 35]])
-            assert.sameDeepMembers(result,[ 
-                [ 2, 98, 552, 999, 2344, 8477 ],
-                [ 12, 35, 55, 77, 98, 100 ],
-                [ 34, 64, 552, 2000, 8477, 19837 ] ])
-            done()
-        })
-
-        it(`Should return ${
-            [ [ 1, 3, 23, 88 ],
-            [ 3, 4 ],
-            [ 3, 11, 58, 123, 657 ],
-            [ 3, 75, 893 ],
-            [ 23, 53, 84, 123 ] ]}`, done => {
-            const result = algo.sortMeOneMoreTime([[75, 893, 3], [4,3],[ 84,23,123,53], [23, 3, 88, 1], [123, 3, 657, 11, 58]])
-            assert.sameDeepMembers( result,
-                [ [ 1, 3, 23, 88 ],
-                [ 3, 4 ],
-                [ 3, 11, 58, 123, 657 ],
-                [ 3, 75, 893 ],
-                [ 23, 53, 84, 123 ] ]
-            )
-            done()
-        })
-
-        // ADJUST
-        it(`Should return ${
-            [ [ 1, 1, 2, 3, 4 ],
-            [ 1, 1, 2, 5, 8, 10 ],
-            [ 1, 1, 2, 8, 9, 100 ] ]
-        }`, done => {
-            const result = algo.sortMeOneMoreTime(
-                [
-                    [1, 2, 10, 1, 5, 8],
-                    [1, 4, 3, 2, 1],
-                    [100, 1, 9, 8, 1, 2]
-                ]
-            )
-            assert.sameDeepMembers( result,
-                [ [ 1, 1, 2, 3, 4 ],
-                [ 1, 1, 2, 5, 8, 10 ],
-                [ 1, 1, 2, 8, 9, 100 ] ]
-            )
-            done()
-        })
-    })
-
     // capitalizeFLetter()
     xdescribe("Captalize the first letter in every word as well as lowercase every word", () => {
         
@@ -394,6 +326,74 @@ describe("Testing Algorhthms", () => {
             done()
         })
         
+    })
+
+    // sortMeOneMoreTime()
+    describe("Return sorted arrays by complete ascending order", () => {
+        it("Should return [[5, 50], [19, 37], [64, 100]]", done => {
+            const result = algo.sortMeOneMoreTime([[50,5],[37,19],[100,64]])
+            assert.sameDeepMembers(result, [[5, 50], [19, 37], [64, 100]])
+            done()
+        })
+
+        it("Should return [ [1, 12, 48], [1, 18, 34], [3, 39, 99] ]", done => {
+            const result = algo.sortMeOneMoreTime([[1,34,18],  [48,1,12], [99,39,3]])
+            assert.sameDeepMembers(result, [[1,12,48], [1,18,34],[3,39,99]])
+            done()
+        })
+
+        it("Should return  [ [37], [50], [100] ]", done => {
+            const result = algo.sortMeOneMoreTime([[50],[37],[100]])
+            assert.sameDeepMembers(result, [[37],[50],[100]])
+            done()
+        })
+
+        it("Should return [[ 2, 98, 552, 999, 2344, 8477 ],[ 12, 35, 55, 77, 98, 100 ],[ 34, 64, 552, 2000, 8477, 19837 ]]", done => {
+            const result = algo.sortMeOneMoreTime([[98, 2344, 2, 999, 8477, 552],[64, 34, 19837, 2000, 8477, 552],[12, 55, 98, 100, 77, 35]])
+            assert.sameDeepMembers(result,[ 
+                [ 2, 98, 552, 999, 2344, 8477 ],
+                [ 12, 35, 55, 77, 98, 100 ],
+                [ 34, 64, 552, 2000, 8477, 19837 ] ])
+            done()
+        })
+
+        it(`Should return ${
+            [ [ 1, 3, 23, 88 ],
+            [ 3, 4 ],
+            [ 3, 11, 58, 123, 657 ],
+            [ 3, 75, 893 ],
+            [ 23, 53, 84, 123 ] ]}`, done => {
+            const result = algo.sortMeOneMoreTime([[75, 893, 3], [4,3],[ 84,23,123,53], [23, 3, 88, 1], [123, 3, 657, 11, 58]])
+            assert.sameDeepMembers( result,
+                [ [ 1, 3, 23, 88 ],
+                [ 3, 4 ],
+                [ 3, 11, 58, 123, 657 ],
+                [ 3, 75, 893 ],
+                [ 23, 53, 84, 123 ] ]
+            )
+            done()
+        })
+
+        // ADJUST
+        it(`Should return ${
+            [ [ 1, 1, 2, 3, 4 ],
+            [ 1, 1, 2, 5, 8, 10 ],
+            [ 1, 1, 2, 8, 9, 100 ] ]
+        }`, done => {
+            const result = algo.sortMeOneMoreTime(
+                [
+                    [1, 2, 10, 1, 5, 8],
+                    [1, 4, 3, 2, 1],
+                    [100, 1, 9, 8, 1, 2]
+                ]
+            )
+            assert.sameDeepMembers( result,
+                [ [ 1, 1, 2, 3, 4 ],
+                [ 1, 1, 2, 5, 8, 10 ],
+                [ 1, 1, 2, 8, 9, 100 ] ]
+            )
+            done()
+        })
     })
 
 
