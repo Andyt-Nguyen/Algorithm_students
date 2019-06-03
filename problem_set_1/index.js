@@ -16,7 +16,7 @@
 
 
 function sortEvenAndOdd(array) {
-    return ;
+    return combine;
 } 
 
 

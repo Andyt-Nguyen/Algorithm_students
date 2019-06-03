@@ -1,5 +1,5 @@
 const assert = require("chai").assert
-const algo = require("./problem_set_1/algorithm")
+const algo = require("./problem_set_1")
 
 describe("Testing Algorhthms", () => {
 
@@ -252,6 +252,12 @@ describe("Testing Algorhthms", () => {
         it("Should return 1155 Jj Abrams Food", done => {
             const result = algo.breakTheCamelsBack("1155JjAbramsFood")
             assert(result, "1155 Jj Abrams Food")
+            done()
+        })
+        
+        it("Should return game Of Thrones", done => {
+            const result = algo.breakTheCamelsBack("gameOfThrones")
+            assert(result, "game Of Thrones")
             done()
         })
     })
