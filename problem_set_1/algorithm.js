@@ -20,27 +20,6 @@ function sortEvenAndOdd(array) {
 } 
 
 
-
- /**
-   Problem 10:
-   Prompt: Create a function called sortMeOneMoreTime
-           In this function you will need to sort all the numbers in each array by assending order as well
-           as the arrays parents arrays themselves
-   Test cases:
-       (This only test some cases for you to get an idea. This does not reflect if your algo works for all test cases)
-        (run `npm run test` to check if your alg passes the tests.)
-        
-        [ [50,  5],  [37,19],   [100,64] ] return [ [5, 50], [19, 37], [64, 100] ]
-        [ [1, 34,  18], [99, 39, 3], [48,  1, 12] ] return [ [1, 12, 48], [1, 18, 34], [3, 39, 99] ]
-        [ [50], [37], [100] ] return [ [37], [50], [100] ]
-  */
- function sortMeOneMoreTime(arr) {
-
-
- }
-
-
-
 /*  
 
     Problem 2:
@@ -244,6 +223,24 @@ function spaceNumbers(numbers){
 function findTheLcd(lst){
     return ;
  }
+
+  /**
+   Problem 10:
+   Prompt: Create a function called sortMeOneMoreTime
+           In this function you will need to sort all the numbers in each array by assending order as well
+           as the arrays parents arrays themselves
+   Test cases:
+       (This only test some cases for you to get an idea. This does not reflect if your algo works for all test cases)
+        (run `npm run test` to check if your alg passes the tests.)
+        
+        [ [50,  5],  [37,19],   [100,64] ] return [ [5, 50], [19, 37], [64, 100] ]
+        [ [1, 34,  18], [99, 39, 3], [48,  1, 12] ] return [ [1, 12, 48], [1, 18, 34], [3, 39, 99] ]
+        [ [50], [37], [100] ] return [ [37], [50], [100] ]
+  */
+ function sortMeOneMoreTime(arr) {
+
+
+}
 
 
  
